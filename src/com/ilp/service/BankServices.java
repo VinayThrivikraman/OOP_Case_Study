@@ -89,14 +89,14 @@ public class BankServices {
 		return null;
 	}
 
-	public static void displayProducts(ArrayList<Product> products) {
-		if (products.isEmpty()) {
+	public static void displayProducts(ArrayList<Product> productList) {
+		if (productList.isEmpty()) {
             System.out.println("No products available.");
         } 
 		else 
 		{
 	        System.out.println("List of Products:");
-	        for (Product product : products) {
+	        for (Product product : productList) {
 	        	System.out.println("\nProduct Code: " + product.getProductCode());
 	            System.out.println("Product Name: " + product.getProductName());
 	            
